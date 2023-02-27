@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form
+        method="POST"
+        data-th-action="@{/submitted}">
+    GID: <input type="number" name="gid" required> <br>
+    User: <input type="text" name="user" required> <br>
+    Rating: <input type="number" min="1" max="10" name="rating" required> <br>
+    Comments: <input type="textarea" name="cText" > <br>
+    <button type="submit">Submit comment</button>      
+
+    </form>
+
+    
+</body>
+</html>
